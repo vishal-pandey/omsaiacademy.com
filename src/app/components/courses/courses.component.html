@@ -1,0 +1,19 @@
+<section class="container">
+	<section class="main">
+		<section class="p-title">
+			<h1><u>Courses</u></h1>
+		</section>
+		<section class="content">
+			<div *ngFor="let course of courses">
+				{{course.course}}
+
+				<ol>
+					<li *ngFor="let user of course.for">
+						{{user}}
+					</li>
+				</ol>
+
+			</div>
+		</section>
+	</section>
+</section>

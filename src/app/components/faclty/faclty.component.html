@@ -1,0 +1,21 @@
+<section class="container">
+	<section class="main">
+		<section class="p-title">
+			<h1><u>Faculty</u></h1>
+		</section>
+		<section class="content">
+			<mat-card class="faculty-card" *ngFor="let teacher of faculty">
+			  <mat-card-header *ngIf="teacher.id">
+			    <div mat-card-avatar class="example-header-image"></div>
+			    <mat-card-title>{{teacher.name}}</mat-card-title>
+			    <mat-card-subtitle>{{teacher.quali}}</mat-card-subtitle>
+			  </mat-card-header>
+			  <img mat-card-image src="http://api.omsaiacademy.com/faculty/profile/{{teacher.id}}.jpg" class="card-img" *ngIf="teacher.id">
+			  
+			  <mat-card-actions *ngIf="teacher.id">
+			    <button mat-button>{{teacher.mobile}}</button>
+			  </mat-card-actions>
+			</mat-card>
+		</section>
+	</section>
+</section>

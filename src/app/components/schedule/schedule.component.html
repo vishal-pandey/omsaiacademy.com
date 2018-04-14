@@ -1,0 +1,44 @@
+<section class="container">
+	<section class="main">
+		<section class="p-title">
+			<h1><u>Batch Schedule</u></h1>
+		</section>
+		<section class="content">
+			<div class="example-container">
+			  <mat-table #table [dataSource]="dataSource">
+
+			    <!--- Note that these columns can be defined in any order.
+			          The actual rendered columns are set as a property on the row definition" -->
+
+			    <!-- Position Column -->
+			    <ng-container matColumnDef="sno">
+			      <mat-header-cell *matHeaderCellDef> No. </mat-header-cell>
+			      <mat-cell *matCellDef="let element"> {{element.id}} </mat-cell>
+			    </ng-container>
+
+			    <!-- Name Column -->
+			    <ng-container matColumnDef="batch">
+			      <mat-header-cell *matHeaderCellDef> Batch </mat-header-cell>
+			      <mat-cell *matCellDef="let element"> {{element.batch}} </mat-cell>
+			    </ng-container>
+
+			    <!-- Weight Column -->
+			    <ng-container matColumnDef="btime">
+			      <mat-header-cell *matHeaderCellDef> Time </mat-header-cell>
+			      <mat-cell *matCellDef="let element"> {{element.btime}} </mat-cell>
+			    </ng-container>
+
+			    <!-- Symbol Column -->
+			    <ng-container matColumnDef="day">
+			      <mat-header-cell *matHeaderCellDef> Day </mat-header-cell>
+			      <mat-cell *matCellDef="let element"> {{element.day}} </mat-cell>
+			    </ng-container>
+
+			    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+			    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+			  </mat-table>
+			</div>
+
+		</section>
+	</section>
+</section>

@@ -1,0 +1,26 @@
+<section class="container">
+	<section class="main">
+		<section class="p-title">
+			<h1><u>Downloads</u></h1>
+		</section>
+		<section class="content">
+			<section class="englishFiles">
+				<h2>English Files</h2>
+				<div *ngFor="let file of englishfiles">
+					<span *ngIf="file != '.' && file != '..'">
+						<a href="http://api.omsaiacademy.com/download/english/{{file}}" target="_blank">{{file}}</a>
+					</span>
+				</div>
+			</section>
+			<br>
+			<section class="otherFiles">
+				<h2>Other Files</h2>
+				<div *ngFor="let file of otherfiles">
+					<span *ngIf="file != '.' && file != '..'">
+						<a href="http://api.omsaiacademy.com/download/other/{{file}}" target="_blank">{{file}}</a>
+					</span>
+				</div>
+			</section>
+		</section>
+	</section>
+</section>

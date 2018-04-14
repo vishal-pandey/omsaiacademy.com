@@ -1,0 +1,40 @@
+.container{
+	width: 100%;
+	background-color: rgb(240,240,240);
+}
+
+.main{
+	max-width: 1000px;
+	min-height: 100vh;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+}
+
+.p-title{
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.p-title h1{
+	margin: 0;
+	font-size: 18px;
+	color: #004D40;
+}
+.content{
+	padding: 20px;
+	text-align: justify;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.faculty-card{
+	width: 30%;
+	margin-top: 50px;
+}
+.card-img{
+	max-height: 290px;
+}

@@ -1,0 +1,41 @@
+.status{
+	background-color: #00796B;
+	height: 20px;
+}
+
+.heading{
+	background-color: #009688;
+	height: 100px;
+	color: #E0F2F1;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.name, .logo, .graphic{
+	max-height: 80%;
+}
+.name{
+	max-width: 60%;
+}
+.logo, .graphic{
+	max-width: 20%;
+}
+
+.menu{
+	width: 100%;
+	background-color: #4DB6AC;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	color: #004D40;
+}
+
+
+@media screen and (max-width: 786px) {
+	.menu{
+		/*display: none;*/
+	}
+
+}

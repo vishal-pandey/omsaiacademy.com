@@ -1,0 +1,18 @@
+<header>
+	<mat-toolbar class="status"></mat-toolbar>
+	<mat-toolbar class="heading">
+		<img src="http://www.omsaiacademy.com/logo.png" class="logo">
+		<img src="http://www.omsaiacademy.com/naming.png" class="name">
+		<img src="http://www.omsaiacademy.com/logio.png" class="graphic">
+	</mat-toolbar>	
+	<mat-toolbar class="menu" *ngIf="!mobile">
+		<button mat-button routerLink="/">Home</button>
+		<button mat-button routerLink="/about-us">About Us</button>
+		<button mat-button routerLink="/courses">Courses</button>
+		<button mat-button routerLink="/batch-schedule">Batch Schedule</button>
+		<button mat-button routerLink="/faculty">Faculty</button>
+		<button mat-button routerLink="/photo-gallery">Photo Gallery</button>		
+		<button mat-button routerLink="/download">Downloads</button>
+		<button mat-button routerLink="/contact-us">Contact Us</button>
+	</mat-toolbar>
+</header>
